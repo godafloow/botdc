@@ -14,7 +14,9 @@ class active(commands.Cog):
                      "bro que te calles que estoy killeando un boss del dark souls", "bro has visto este juego?", "nigga stfu y mira esto", "cabron callate un puto mes",
                      "hay gente que no se ha jugado un persona en la vida y se nota pila 4r", "buah es que como quiero pegar a un facha ahora mismo",
                      "te has esucuchado este tema?", "es que a mi me flipan los personas", "como me encantan los dark souls joder", "soy dante de dmc y no hay discusion",
-                     "soy shadow y quien diga lo contrario esta en lo incorrecto", "pero 4r que no sabias eso? yo pensaba que era sentido comun", 
+                     "soy shadow y quien diga lo contrario esta en lo incorrecto", "pero 4r que no sabias eso? yo pensaba que era sentido comun", "quiero una gotica culona", 
+                     "quiero una mommy gotica pero gotica de verdad yo no soy larper", "estoy to fumao", "sin mi monster blanca diaria no vivo", "soy fan de orslok", "soy fan de rojuu (no toyoko kidzz, sino que yotoko kidzz)",
+                     "soy fan de carolina durante", "increible que alguien te quiera", ""
                     ]
 
 

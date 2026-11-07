@@ -15,7 +15,7 @@ ZONA_HORARIA = ZoneInfo("Europe/Madrid")
 TIEMPO_DESPERTAR = 5 * 60  # 5 minutos
 
 despertar_hasta = 0.0
-numero_despertar = random.randint(1, 10)
+numero_despertar = 1
 menciones_despertar = 0
 
 
@@ -145,6 +145,17 @@ def esta_despierta() -> bool:
 # DESPERTAR CON NÚMERO
 # =========================
 
+despertar_inicio = ["nigga stfu"]
+
+juegos = ["dark souls", "persona", "metal gear", "kingdom hearts", "devil may cry", "shadow", "final fantasy vii", "bloodborne", "cyberpunk", "baldurs gate", "sekiro", "spiderman",
+          "risk of rain 2", "blasphemous 2", "cruelty squad", "black myth wukong", "what remains of edith finch", "firewatch", "yakuza", ""]
+
+despertar_muletillas = ["estaba durmiendo", "estaba descansando, cuando desbroces lo entenderas 4r", "estoy brotado, dejame en paz", "me estaba durmiendo", 
+                        "me estaba haciendo fotos para ligar", f"estaba larpeando {juegos[randint(0, len(juegos))]}"]
+
+
+
+
 async def intentar_despertar(message) -> bool:
     global despertar_hasta, numero_despertar, menciones_despertar
 
@@ -176,12 +187,17 @@ async def intentar_despertar(message) -> bool:
         f"[DEBUG SUEÑO] ¡Despertado! "
         f"Estará despierto durante {TIEMPO_DESPERTAR // 60} minutos."
     )
-
+    """
+    
+    ESTOY CIEGO
+    
+    """
+    
     await message.channel.send(
-        "¡Me has mencionado suficientes veces! Ya estoy despierto."
+        despertar_muletillas[randint(0, len(despertar_muletillas))]
     )
 
-    numero_despertar = random.randint(1, 10)
+    numero_despertar = 1
 
     print(
         f"[DEBUG SUEÑO] Próximo despertar: "
